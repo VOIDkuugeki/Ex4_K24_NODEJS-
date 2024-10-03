@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        if (typeof(Storage) !== "undefined") {
+            // Code for localStorage/sessionStorage.
+            localStorage.setItem("lastname", "Void");
+            document.write(localStorage.getItem("lastname"));
+        } else {
+            // Sorry! No Web Storage support..
+            document.write("Sorry! No Web Storage support..");
+        }
+    </script>
+</body>
+</html>
